@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:400, 700');
 // @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 // @import '~antd/dist/antd.css';
@@ -10,3 +11,8 @@
 @import './typography';
 @import './overrides';
 @import './animation';
+
+// common component
+@import './components/loading';
+// pages
+@import './pages/main';
