@@ -1,7 +1,9 @@
 import React from 'react';
+import Routes from './Routes';
+import 'styles/main.scss';
 
 function App() {
-  return <div className="App">hello world</div>;
+  return <Routes />;
 }
 
 export default App;
