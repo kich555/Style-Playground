@@ -8,7 +8,7 @@ const Main = lazy(() => import('pages/Main'));
 function Routers() {
   const loading = () => <Loading />;
   const location = useLocation();
-  console.log('import?');
+
   useEffect(() => {
     if (location.pathname !== '/list') document.body.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [location]);
