@@ -14,5 +14,9 @@
 
 // common component
 @import './components/loading';
+@import './components/3dList';
+@import './components/curveList';
 // pages
 @import './pages/main';
+@import './pages/animation';
+@import './pages/animationDetail';

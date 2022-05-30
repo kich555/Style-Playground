@@ -1,0 +1,61 @@
+.list-wrapper-3d {
+  transform: skewY(-15deg);
+  //매개 변수로 지정된 Y축의 각도에 따라 2차원 방식으로 기울기를 처리
+  @for $i from 0 through 6 {
+    .list-#{$i} {
+      z-index: #{$i};
+    }
+  }
+  .list {
+    background-color: #3e3f3e;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: 500ms;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -40px;
+      width: 40px;
+      height: 100%;
+      background-color: #2e3133;
+      transform-origin: right;
+      transform: skewY(45deg);
+      transition: 500ms;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      transform-origin: bottom;
+      background-color: #35383e;
+      transform: skewX(45deg);
+      transition: 500ms;
+    }
+    &:hover {
+      color: #fff;
+      background-color: #33a3ee;
+      transform: translateX(-50px);
+    }
+    &:hover::before {
+      background-color: #1f5378;
+    }
+    &:hover::after {
+      background-color: #2982b9;
+    }
+    @for $i from 0 through 6 {
+      &:nth-child(#{$i})::after {
+        box-shadow: -#{420 - $i * 50}px #{420 - $i * 50}px 2px rgba(0, 0, 0, 1);
+      }
+    }
+    // &:last-child::after {
+    //   box-shadow: -120px 120px 8px rgba(0, 0, 0, 0.25);
+    // }
+  }
+}

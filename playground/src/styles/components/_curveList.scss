@@ -1,0 +1,57 @@
+.icon {
+  // background-color: aquamarine;
+  line-height: 65px;
+  color: #222327;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    border-radius: 50%;
+    filter: blur(5px);
+    opacity: 0;
+  }
+}
+
+.active {
+  background-color: aquamarine;
+  color: $white;
+  transform: translateY(-28px);
+  z-index: 2;
+  &::before {
+    opacity: 0.5;
+  }
+}
+
+.indicator {
+  position: absolute;
+  top: -36px;
+  left: 28px;
+  z-index: 1;
+  transition: 500ms;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -29px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 15px 18px #fff;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: -29px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: -15px 18px #fff;
+  }
+}
