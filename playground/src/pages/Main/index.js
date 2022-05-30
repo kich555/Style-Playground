@@ -6,9 +6,9 @@ function Main() {
 
   return (
     <div className="main-page centered">
-      <ul className="list-wrapper relative">
+      <ul className="list-wrapper-3d relative">
         {navigateList.map((list, idx) => (
-          <DropDownList navigateTo={`${list}`} idx={idx} />
+          <DropDownList name={`${list}`} navigateTo={`${list}`} idx={idx} />
         ))}
       </ul>
     </div>

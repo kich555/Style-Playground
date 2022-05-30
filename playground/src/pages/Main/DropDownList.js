@@ -2,9 +2,9 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { capitalize } from 'lodash';
 
-function DropDownList({ navigateTo, idx }) {
+function DropDownList({ name, navigateTo, idx }) {
   const navigate = useNavigate();
-  const buttonName = capitalize(navigateTo);
+  const buttonName = capitalize(name);
   const reverseIdx = idx - 6;
   return (
     <li className={`list list${reverseIdx} relative width-200 link uppercase`}>
