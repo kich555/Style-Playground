@@ -8,6 +8,7 @@ const About = lazy(() => import('pages/About'));
 const Animation = lazy(() => import('pages/Animation'));
 const Contract = lazy(() => import('pages/Contract'));
 const Portfolio = lazy(() => import('pages/Portfolio'));
+const AnimationDetail = lazy(() => import('pages/AnimationDetail'));
 
 function Routers() {
   const loading = () => <Loading />;
@@ -23,6 +24,7 @@ function Routers() {
         <Route path="/home" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/animation" element={<Animation />} />
+        <Route path="/animation/detail/:name" element={<AnimationDetail />} />
         <Route path="/contract" element={<Contract />} />
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
