@@ -21,7 +21,10 @@ function Routers() {
   return (
     <Suspense fallback={loading()}>
       <Routes>
-        <Route path="/home" element={<Main />} />
+        {['/', '/home'].map(path => (
+          <Route path={path} element={<Main />} />
+        ))}
+        <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/animation" element={<Animation />} />
         <Route path="/animation/detail/:name" element={<AnimationDetail />} />
