@@ -18,6 +18,7 @@ module.exports = {
     'react/prop-types': 0,
     'eslint-plugin-import': 0,
     'anchor-is-valid': 0,
+    'no-plusplus': 0,
     // Parsing error: Unexpected token import
   },
 };
