@@ -1,0 +1,27 @@
+.carousel {
+  width: 500px;
+  height: 300px;
+  .container {
+    //   flex-shrink: 0;
+
+    .carousel-list {
+      flex-shrink: 0;
+      .carousel-img {
+      }
+    }
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+  }
+
+  .btn-left {
+    left: 0;
+  }
+  .btn-right {
+    right: 0;
+  }
+}
