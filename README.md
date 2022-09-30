@@ -23,4 +23,11 @@
 <br/>
 <p align='center'>잊지 않고자 profile readme에 걸어놨습니다.  </p>
 
-<p align='center'><img src="playground/public/image/기억할게.png" /> </p>
+<p align='center'>
+  <img src="playground/public/image/기억할게.png" />
+</p>
+<p align='center'>추후 이 작업은 아래의 findingNFT 디자인의 영감이 되었습니다.</p>
+<br/>
+<p align='center'>
+  <img src="playground/public/image/findingNFT.gif" />
+</p>
