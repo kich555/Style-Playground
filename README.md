@@ -1,3 +1,5 @@
+<img src="public/image/Style_Play_Ground.gif" width="420"/>
+
 # Style-Playground
 인터렉티브한 UI를 만드는 놀이터 / Interactive UI Playground
 <br/>
@@ -12,3 +14,5 @@
 더 재밌는 것들이 많아 계속 뒤로 밀리는 중입니다. 
 <br/>
 잊지 않고자 profile readme에 걸어놨습니다.  
+
+<img src="public/image/기억할게.png" width="420"/>
